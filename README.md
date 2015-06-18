@@ -29,12 +29,14 @@ validates :name, presence: true
 - Validate that the title of each recipe is unique.
 
 
-validates :name, presence: true, uniqueness: true
+validates :name, uniqueness: true
 
 - Validate that the title of each recipe contains "Brussels sprouts" in it.
 
 
 validates :name, inclusion: { in: %w(brussels sprouts)}
+
+validates :name, inclusion: { in: ["Brussel Sprouts"] }
 
 - Validate that the length of a comment be a maximum of 140 characters long.
 
