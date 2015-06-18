@@ -1,9 +1,9 @@
 class AddYieldToRecipes < ActiveRecord::Migration
-  def up
-    add_column :recipes, :yield, :string
+  def change
+    add_column :recipes, :theyield, :integer
   end
-
-  def down
-    remove_column :recipes, :yield, :string
-  end
+  #
+  # def down
+  #   remove_column :recipes, :theyield, :integer
+  # end
 end

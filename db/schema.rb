@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 20150618003417) do
   end
 
   create_table "recipes", force: :cascade do |t|
-    t.string "name",  null: false
-    t.string "yield"
+    t.string  "name",     null: false
+    t.integer "theyield"
   end
 
 end
