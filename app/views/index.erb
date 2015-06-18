@@ -1,0 +1,12 @@
+<h1><%= @title %></h1>
+
+
+<% Recipe.all.each do |recipe| %>
+  <dt><a href=""><strong><%= recipe.name %></strong></a></dt>
+  <br>
+  <dd>ID: <%= recipe.id %> </dd>
+  <dd>Name: <%= recipe.name %> </dd>
+  <dd><%= recipe.comments %></dd>
+
+  <br>
+<% end %>
